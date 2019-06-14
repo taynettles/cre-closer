@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>CRE Closer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="/stylesheets/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html">CRE Closer</a>
+			</header>
+
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>Checkout</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper col-sm-6">
+				<div class="inner">
+					<div class="content">
+					<h2 style="text-align:center">Purchase Now - $149</h2>
+					
+					<hr>
+
+					<form action="/charge" method="post" id="payment-form">
+						<div>
+							<div class="form-row">
+								<div class="col-sm-6">
+									<label for="email">
+										Email Address
+									</label>
+									<input id="email" name="email" type="email" 
+									placeholder="example@example.com" required>	
+							<!--<br>
+									
+									<label for="email">
+										Confirm Email Address
+									</label>
+									<input id="email_confirm" name="email_confirm" type="email"
+									placeholder="example@example.com" required>
+								</div>
+
+									-->
+							</div>
+							<br />
+							<label for="card-element">
+								Credit or debit card
+							</label>
+	
+							<div id="card-element">
+							<!--Card info goes here-->
+							</div>
+								
+							<!-- Used to display form errors. -->
+							<div id="card-errors" role="alert"></div>
+						</div>
+						<hr />
+						<div class="form-row">
+							<label><input type="checkbox" id="terms" /> I accept the <a href="/terms">terms and conditions agreement</a>.</label>
+						</div>							
+						<button id="button" type="submit" disabled>Submit Payment</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h4>Social Media</h4>
+							<ul class="plain">
+								<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+								<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+								<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+								<li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="copyright">
+						&copy; 2019 CRE Closer
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="https://js.stripe.com/v3/"></script>
+			<script src="/javascripts/payment.js"></script>
+
+			<script src="/javascripts/jquery.min.js"></script>
+			<script src="/javascripts/browser.min.js"></script>
+			<script src="/javascripts/breakpoints.min.js"></script>
+			<script src="/javascripts/util.js"></script>
+			<script src="/javascripts/main.js"></script>
+
+	</body>
+</html>
